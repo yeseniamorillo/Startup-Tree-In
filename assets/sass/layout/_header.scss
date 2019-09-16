@@ -1,0 +1,17 @@
+.ima{
+  background-image: url(../img/bg-hero.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    .ima{
+      width: 375px;
+      background-size: contain;
+      background-position: bottom;
+      height: 468px;
+    }
+  }

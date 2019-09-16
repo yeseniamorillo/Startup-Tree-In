@@ -1,0 +1,105 @@
+// fondo de background-image
+.main-section{
+ background-image: url(../img/bg-price.svg);
+ background-repeat: no-repeat;
+ background-position: top;
+ height: 700px;
+ padding-top: 200px;
+  }
+  .text-center_secction{
+    color: $white;
+  }
+
+// secion de price
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around ;
+  width: 60%;
+  margin: 0 auto;
+
+  .caja_flex__1{
+    background-color: $white;
+    flex-direction: column;
+    .b1{
+      padding: 30px 20px 150px;
+    }
+  }
+
+  .caja_flex__2{
+    background-color: $white;
+    flex-direction: column;
+    .b2{
+      padding: 30px 20px 77px;
+    }
+  }
+}
+
+// secciton Caracteristicas
+.container-flex__main{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .main__flex{
+    margin: 30px;
+    padding: 20px 90px;
+  }
+
+  .main__flex_2{
+    flex-direction: column;
+    padding: 20px 200px;
+      h2{
+        font-weight: $bold;
+      }
+  }
+}
+
+.animado {
+  animation: animado2 15s ease-out;
+}
+
+span{
+  font-weight: $bold;
+  font-size: $xxxxx-large;
+}
+
+@media (max-width: 576px) {
+    .container-flex__main{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .main__flex{
+      margin: 30px;
+      padding: 20px 90px;
+    }
+
+    .main__flex_2{
+      flex-direction: column;
+      padding: 20px 200px;
+    }
+
+    .container-flex{
+      flex-direction:column;
+    }
+
+    .main-section{
+    background-size: cover;
+    height: 100%;
+    padding-top: 250px;
+    padding-bottom: 30px;
+  }
+
+  .caja_flex__2{
+    background-color: $white;
+    flex-direction: column;
+    margin-top: 20px;
+    .b2{
+      padding: 30px 20px 77px;
+    }
+  }
+}

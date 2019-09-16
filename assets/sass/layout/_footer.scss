@@ -1,0 +1,51 @@
+footer{
+  background-color: $raising;
+  color: $platinum;
+  height: 80px;
+  padding: 20px 60px 20px;
+}
+
+.nav{
+  font-size: $small;
+}
+
+.copyright{
+  position: relative;
+}
+.footer_copy{
+  position: absolute;
+  right: 5%;
+  width: 15%;
+  float: right;
+}
+.nav{
+  width: 80%;
+  float: left;
+}
+
+@media (max-width: 576px){
+
+      footer{
+        height: 100px;
+      }
+
+      .nav{
+        width: 100%;
+        float: left;
+        font-size: $x-small;
+        }
+
+      .nav-item{
+        width: 33%;
+        text-align: center;
+      }
+
+    .footer_copy{
+      position: revert;
+      text-align: center;
+      right: 5%;
+      width: 100%;
+      float: right;
+      font-size: $x-small
+    }
+}
